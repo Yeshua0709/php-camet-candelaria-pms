@@ -33,13 +33,38 @@ try {
 
   $stmtPatient = $con->prepare($query);
   $stmtPatient->execute();
-
+  $lastInsertId = $con->lastInsertId();//latest patient visit id
   $con->commit();
 
   $message = 'patient added successfully.';
 
+  
+  
+
+
+  $toothStatus = 'unchecked';
+
+  $querySecondTable = "INSERT INTO `dentalchart`(`patient_id`,`t1`, `t2`, `t3`, `t4`, `t5` )
+  VALUES
+  ($lastInsertId,
+  '$toothStatus',
+  '$toothStatus',
+ '$toothStatus',
+  '$toothStatus',
+'$toothStatus')";
+
+  $con->beginTransaction();
+
+  $stmtSecondTable = $con->prepare($querySecondTable);
+
+  $stmtSecondTable->execute();
+
+  $con ->commit();
+
 } catch(PDOException $ex) {
+
   $con->rollback();
+
 
   echo $ex->getMessage();
   echo $ex->getTraceAsString();

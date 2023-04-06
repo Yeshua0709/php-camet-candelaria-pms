@@ -103,7 +103,7 @@ nav p,nav a, nav i{
                 <a href="appointments.php" class="nav-link" 
                 id="mi_reports">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Check Appointments</p>
+                  <p>Add an Appointment</p>
                 </a>
               </li>
               

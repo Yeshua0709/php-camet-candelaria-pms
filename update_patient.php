@@ -224,6 +224,247 @@ include './config/sidebar.php';?>
         </div>
         
       </div>
+
+
+
+      <div class="card card-outline  rounded-0 shadow bg-line">
+        <div class="card-header">
+          <h3 class="card-title">Update Patient's Dental Chart</h3>
+          
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+            
+          </div>
+        </div>
+        <div class="card-body">
+          <form method="post">
+            <input type="hidden" name="hidden_id" 
+            value="<?php echo $row['id'];?>">
+
+            <div class="row">
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T1</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T2</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+              
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T3</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T4</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T5</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T6</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T7</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T8</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T9</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+              
+              
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T10</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T11</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+              <label>T12</label>
+              <input type="text" id="patient_name" name="patient_name" required="required"
+                class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+              </div>
+            
+              </div>
+
+              
+              <div class="row">
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T13</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T14</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T15</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T16</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T17</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T18</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T19</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T20</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T21</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T22</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T23</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T24</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T25</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T26</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T27</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T28</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T29</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T30</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T31</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
+<label>T32</label>
+<input type="text" id="patient_name" name="patient_name" required="required"
+  class="form-control form-control-sm rounded-0" value="<?php echo $row['patient_name'];?>" />
+</div>
+
+
+</div>
+
+<br><br>
+              
+              <div class="row">
+                <div class="col-lg-11 col-md-10 col-sm-10">&nbsp;</div>
+              <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                <button type="submit" id="save_Patient" 
+                name="save_Patient" class="btn bg-btn btn-sm btn-flat btn-block">Save</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
       
     </section>
      <br/>
