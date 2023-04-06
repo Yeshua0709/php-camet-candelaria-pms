@@ -45,13 +45,33 @@ if(isset($_POST['save_DentalChart'])){
       `t2` = '$t2',
       `t3` = '$t3',
       `t4` = '$t4',
-      `t6` = '$t5',
-      `t7` = '$t5',
-      `t8` = '$t5',
-      `t9` = '$t5',
-      `t10` = '$t5',
-      `t5` = '$t5',
-      `t5` = '$t5',
+      `t6` = '$t6',
+      `t7` = '$t7',
+      `t8` = '$t8',
+      `t9` = '$t9',
+      `t10` = '$t10',
+      `t11` = '$t11',
+      `t12` = '$t12',
+      `t13` = '$t13',
+      `t14` = '$t14',
+      `t15` = '$t15',
+      `t16` = '$t16',
+      `t17` = '$t17',
+      `t18` = '$t18',
+      `t19` = '$t19',
+      `t20` = '$t10',
+      `t21` = '$t21',
+      `t22` = '$t22',
+      `t23` = '$t23',
+      `t24` = '$t24',
+      `t25` = '$t25',
+      `t26` = '$t26',
+      `t27` = '$t27',
+      `t28` = '$t28',
+      `t29` = '$t29',
+      `t30` = '$t30',
+      `t31` = '$t31',
+      `t32` = '$t32'
 
       where `patient_id` = $hiddenId;
   ";
@@ -343,31 +363,31 @@ include './config/sidebar.php';?>
 
               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
               <label>T1</label>
-              <input type="text" id="t1" name="t1" required="required"
+              <input type="text" id="t1" name="t1" 
                 class="form-control form-control-sm rounded-0" value="<?php echo $row2['t1'];?>" />
               </div>
 
               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
               <label>T2</label>
-              <input type="text" id="t2" name="t2" required="required"
+              <input type="text" id="t2" name="t2" 
                 class="form-control form-control-sm rounded-0" value="<?php echo $row2['t2'];?>" />
               </div>
               
               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
               <label>T3</label>
-              <input type="text" id="t3" name="t3" required="required"
+              <input type="text" id="t3" name="t3"
                 class="form-control form-control-sm rounded-0" value="<?php echo $row2['t3'];?>" />
               </div>
 
               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
               <label>T4</label>
-              <input type="text" id="t4" name="t4" required="required"
+              <input type="text" id="t4" name="t4"
                 class="form-control form-control-sm rounded-0" value="<?php echo $row2['t4'];?>" />
               </div>
 
               <div class="col-lg-1 col-md-1 col-sm-1 col-xs-5">
               <label>T5</label>
-              <input type="text" id="t5" name="t5" required="required"
+              <input type="text" id="t5" name="t5"
                 class="form-control form-control-sm rounded-0" value="<?php echo $row2['t5'];?>" />
               </div>
 
