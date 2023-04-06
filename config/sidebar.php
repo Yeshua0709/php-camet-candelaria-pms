@@ -12,9 +12,12 @@ if(!(isset($_SESSION['user_id']))) {
 }
 
 nav p,nav a, nav i{
-  color:#0049B3
+  color:#0049B3;
 }
-
+.username{
+  color:#0049B3;
+  font-family: 'Poppins', 'san-serif';
+}
 
 </style>
 <aside class="main-sidebar  elevation-4 sidebar-background">
@@ -29,7 +32,7 @@ nav p,nav a, nav i{
           src="user_images/<?php echo $_SESSION['profile_picture'];?>" class="img-circle elevation-2" alt="User Image" />
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?php echo $_SESSION['display_name'];?></a>
+          <a href="#" class="d-block username"><?php echo $_SESSION['display_name'];?></a>
         </div>
       </div>
 
