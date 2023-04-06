@@ -44,14 +44,9 @@ try {
 
   $toothStatus = 'unchecked';
 
-  $querySecondTable = "INSERT INTO `dentalchart`(`patient_id`,`t1`, `t2`, `t3`, `t4`, `t5` )
+  $querySecondTable = "INSERT INTO `dentalchart`(`patient_id`)
   VALUES
-  ($lastInsertId,
-  '$toothStatus',
-  '$toothStatus',
- '$toothStatus',
-  '$toothStatus',
-'$toothStatus')";
+  ($lastInsertId)";
 
   $con->beginTransaction();
 
