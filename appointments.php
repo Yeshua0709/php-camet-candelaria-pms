@@ -255,7 +255,7 @@ include './config/sidebar.php';?>
                     <td><?php echo $row['date'];?></td>
                     <td><?php echo $row['time'];?></td>
                     <td>
-                      <a href="update_patient.php?id=<?php echo $row['id'];?>" class = "btn btn-primary btn-sm btn-flat">
+                      <a href="update_appointment.php?id=<?php echo $row['id'];?>" class = "btn btn-primary btn-sm btn-flat">
                       <i class="fa fa-edit"></i>
                       </a>
                     </td>
