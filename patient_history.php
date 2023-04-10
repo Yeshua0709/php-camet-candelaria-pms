@@ -33,7 +33,10 @@ $patients = getPatients($con);
   background:#0049B3;
   color:white;
 }
+.bg-line{
+  border-top: 4px solid #0049B3;
 
+}
 
   </style>
 
@@ -63,7 +66,7 @@ include './config/sidebar.php';?>
     <section class="content">
 
       <!-- Default box -->
-      <div class="card card-outline card-primary rounded-0 shadow">
+      <div class="card card-outline bg-line rounded-0 shadow">
         <div class="card-header">
           <h3 class="card-title">Search Patient History</h3>
 
