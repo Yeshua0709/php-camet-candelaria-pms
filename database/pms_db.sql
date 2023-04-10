@@ -122,11 +122,6 @@ INSERT INTO `medicines` (`id`, `medicine_name`) VALUES
 (1, 'None'),
 (7, 'Oxymetazoline');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `medicine_details`
---
 
 CREATE TABLE `medicine_details` (
   `id` int(11) NOT NULL,
@@ -134,9 +129,7 @@ CREATE TABLE `medicine_details` (
   `packing` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Dumping data for table `medicine_details`
---
+
 
 INSERT INTO `medicine_details` (`id`, `medicine_id`, `packing`) VALUES
 (1, 1, '0'),
@@ -147,11 +140,7 @@ INSERT INTO `medicine_details` (`id`, `medicine_id`, `packing`) VALUES
 (6, 2, '100'),
 (7, 7, '25');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `migrations`
---
 
 CREATE TABLE `migrations` (
   `id` int(10) UNSIGNED NOT NULL,
@@ -159,11 +148,7 @@ CREATE TABLE `migrations` (
   `batch` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `patients`
---
 
 CREATE TABLE `patients` (
   `id` int(11) NOT NULL,
@@ -175,20 +160,13 @@ CREATE TABLE `patients` (
   `gender` varchar(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Dumping data for table `patients`
---
 
 INSERT INTO `patients` (`id`, `patient_name`, `address`, `cnic`, `date_of_birth`, `phone_number`, `gender`) VALUES
 (22, 'Juan Dela Cruz', 'Block 21 Lot 45', 'abrenica.y@gmail.', '2023-04-07', '09972157320', 'Male'),
 (23, 'Annie Batungbakal', 'Block 21 Lot 45', 'abrenica.y@gmail.', '2023-04-11', '09972157320', 'Female'),
 (24, 'Josh Pilay', 'Block 21 Lot 45', 'abrenica.y@gmail.', '2023-04-17', '09972157320', 'Male');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `patient_medication_history`
---
 
 CREATE TABLE `patient_medication_history` (
   `id` int(11) NOT NULL,
