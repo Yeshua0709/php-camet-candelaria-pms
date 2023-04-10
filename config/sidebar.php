@@ -29,7 +29,7 @@ nav p,nav a, nav i{
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
           <img 
-          src="user_images/<?php echo $_SESSION['profile_picture'];?>" class="img-circle elevation-2" alt="User Image" />
+          src="user_images/<?php echo $_SESSION['profile_picture']?>" class="img-circle elevation-2" alt="User Image" />
         </div>
         <div class="info">
           <a href="#" class="d-block username"><?php echo $_SESSION['display_name'];?></a>

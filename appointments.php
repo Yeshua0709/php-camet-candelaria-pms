@@ -80,6 +80,9 @@ FROM `appointments` order by `time` asc;";
   <title>Patients - Clinic's Patient Management System in PHP</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     .content{
       margin:1.5em;
       margin-left:0;
@@ -255,7 +258,7 @@ include './config/sidebar.php';?>
                     <td><?php echo $row['date'];?></td>
                     <td><?php echo $row['time'];?></td>
                     <td>
-                      <a href="update_appointment.php?id=<?php echo $row['id'];?>" class = "btn btn-primary btn-sm btn-flat">
+                      <a href="update_appointment.php?id=<?php echo $row['id'];?>" class = "btn bgBlue btn-sm btn-flat">
                       <i class="fa fa-edit"></i>
                       </a>
                     </td>

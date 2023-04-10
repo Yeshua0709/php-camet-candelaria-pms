@@ -128,6 +128,10 @@ i{
 .minimize{
   color:#0049B3;
 }
+
+.bg-line{
+  border-top: 4px solid #0049B3;
+}
 </style>
 </head>
 <body class="hold-transition sidebar-mini light-mode layout-fixed layout-navbar-fixed">
@@ -210,7 +214,7 @@ include './config/sidebar.php';
 
     <section class="content apppointmentContent">
       <!-- Default box -->
-      <div class="card card-outline card-primary rounded-0 shadow">
+      <div class="card card-outline bg-line rounded-0 shadow">
         <div class="card-header">
           <h3 class="card-title">Appointments' List</h3>
 

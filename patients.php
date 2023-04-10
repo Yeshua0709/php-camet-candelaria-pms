@@ -100,6 +100,8 @@ FROM `patients` order by `patient_name` asc;";
   <title>Patients - Clinic's Patient Management System in PHP</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     .content{
       margin:1.5em;
       margin-left:0;
@@ -119,6 +121,10 @@ FROM `patients` order by `patient_name` asc;";
 .bgBlue{
   background:#0049B3;
   color:white;
+}
+
+.bg-line{
+  border-top: 4px solid #0049B3;
 }
 
 
@@ -147,7 +153,7 @@ include './config/sidebar.php';?>
     <section class="content">
 
       <!-- Default box -->
-     <div class="card card-outline card-primary rounded-0 shadow">
+     <div class="card card-outline bg-line rounded-0 shadow">
         <div class="card-header">
           <h3 class="card-title">Add Patients</h3>
           
@@ -231,7 +237,7 @@ include './config/sidebar.php';?>
 
  <section class="content">
       <!-- Default box -->
-      <div class="card card-outline card-primary rounded-0 shadow">
+      <div class="card card-outline bg-line rounded-0 shadow">
         <div class="card-header">
           <h3 class="card-title">Patients' List</h3>
 
@@ -276,7 +282,7 @@ include './config/sidebar.php';?>
                     <td><?php echo $row['phone_number'];?></td>
                     <td><?php echo $row['gender'];?></td>
                     <td>
-                      <a href="update_patient.php?id=<?php echo $row['id'];?>" class = "btn btn-primary btn-sm btn-flat">
+                      <a href="update_patient.php?id=<?php echo $row['id'];?>" class = "btn bgBlue btn-sm btn-flat">
                       <i class="fa fa-edit"></i>
                       </a>
                     </td>
