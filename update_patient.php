@@ -201,7 +201,7 @@ FROM `dentalchart` where `patient_id` = $id;";
  <?php include './config/data_tables_css.php';?>
 
   <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <title>Update Pateint Details - Clinic's Patient Management System in PHP</title>
+  <title>Camet - Candelaria Dental Clinic - Patient Management System</title>
 
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');

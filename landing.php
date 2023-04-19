@@ -58,13 +58,25 @@ try {
 <?php include './config/site_css_links.php';?>
 
 <?php include './config/data_tables_css.php';?>
-    <title>Camet Candelaria</title>
+    <title>Camet - Candelaria Dental Clinic - Patient Management System</title>
 
     <style>
         body
         {
             padding: 0;
             margin: 0;
+        }
+
+        .navwindow2 a{
+            padding-top: 2em;
+            margin-top: 2em;
+           
+        }
+
+        .app-btn{
+            background: #0049B3;
+            color:white;
+            margin-left: 0.65em;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -255,7 +267,7 @@ try {
 
               <div class="">
                 <button type="submit" id="save_Patient" 
-                name="save_Patient" class="btn bgBlue btn-sm btn-flat">Book Appointment</button>
+                name="save_Patient" class="btn bgBlue btn-sm btn-flat app-btn">Book Appointment</button>
               </div>
             </div>
           </form>

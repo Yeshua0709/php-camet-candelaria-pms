@@ -9,7 +9,7 @@ $patients = getPatients($con);
 <html lang="en">
 <head>
  <?php include './config/site_css_links.php';?>
- <title>Patient History - Clinic's Patient Management System in PHP</title>
+ <title>Camet - Candelaria Dental Clinic - Patient Management System</title>
 
  <style>
    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');

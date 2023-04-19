@@ -87,7 +87,7 @@ $medicines = getMedicines($con);
  <?php include './config/site_css_links.php' ?>
 
  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
- <title>Camet Candelaria</title>
+ <title>Camet - Candelaria Dental Clinic - Patient Management System</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');

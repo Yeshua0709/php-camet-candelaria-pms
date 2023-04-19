@@ -83,7 +83,7 @@ try {
 
  
  <?php include './config/data_tables_css.php';?>
- <title>Users - Clinic's Patient Management System in PHP</title>
+ <title>Camet - Candelaria Dental Clinic - Patient Management System</title>
 
  <style>
    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');

@@ -153,7 +153,7 @@ try {
 
   <div class="logocon"><center>
        <img src="dist/img/logo.png" class="imgLogo" id="system-logo">
-       <div class=""><h1 class="title">Camet-Candelaria Dental Clinic</h1></div>
+       <div class=""><h1 class="title">Camet - Candelaria Dental Clinic - Patient Management System</h1></div>
        <p>ADMIN</p></center>
   </div>
 

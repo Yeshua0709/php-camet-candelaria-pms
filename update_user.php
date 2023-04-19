@@ -76,7 +76,7 @@ header("Location:congratulation.php?goto_page=users.php&message=$message");
 <head>
  <?php include './config/site_css_links.php';?>
 
- <title>Update User  Details - Clinic's Patient Management System in PHP</title>
+ <title>Camet - Candelaria Dental Clinic - Patient Management System</title>
 
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
