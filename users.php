@@ -50,16 +50,7 @@ VALUES('$displayName', '$userName', '$encryptedPassword', '$targetFile');";
 header("location:congratulation.php?goto_page=users.php&message=$message");
 exit;
 }
-  //https://www.w3schools.com/php/php_file_upload.asp
-/**
-we will save the user picture in a separate folder.
-and in database we will store the picture name only.
 
-ON THE OTHER HAND
-mysql supports blob data for storing pictures, 
-but we are not going to use it. why?
-find reason?
-*/
 
 $queryUsers = "select `id`, `display_name`, `user_name`, 
 `profile_picture` from `users` 
