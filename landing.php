@@ -1,8 +1,63 @@
+<?php
+include './config/connection.php';
+include './common_service/common_functions.php';
+
+
+$message = '';
+if (isset($_POST['save_Patient'])) {
+
+    $name = trim($_POST['name']);
+    $phoneNumber = trim($_POST['phone_number']);
+    $reason = trim($_POST['reason']);
+
+    $time = trim($_POST['time']);
+    
+    $dateBirth = trim($_POST['date_of_birth']);
+    $dateArr = explode("/", $dateBirth);
+    
+    $dateBirth = $dateArr[2].'-'.$dateArr[0].'-'.$dateArr[1];
+
+    $status = "Active";
+
+    $name = ucwords(strtolower($name));
+   
+if ($name != '' && $reason != '' && 
+  $time != '' && $dateBirth != '' && $phoneNumber != '' ) {
+      $query = "INSERT INTO `appointments`(`name`, 
+    `contactnumber`, `reason`, `status`, `date`, `time`)
+VALUES('$name', '$phoneNumber', '$reason', '$status',
+'$dateBirth', '$time');";
+try {
+
+  $con->beginTransaction();
+
+  $stmtPatient = $con->prepare($query);
+  $stmtPatient->execute();
+
+  $con->commit();
+
+  $message = 'Appointment added successfully.';
+
+} catch(PDOException $ex) {
+  $con->rollback();
+
+  echo $ex->getMessage();
+  echo $ex->getTraceAsString();
+  exit;
+}
+}
+  header("Location:congratulation.php?goto_page=landing.php&message=$message");
+  exit;
+}
+?>
 <!DOCTYPE html>
 
 <html> 
 
 <head>
+<?php include './config/site_css_links.php';?>
+
+<?php include './config/data_tables_css.php';?>
     <title>Camet Candelaria</title>
 
     <style>
@@ -144,46 +199,69 @@
                
                 <div className='landwindow4_1'>
                     <div className='landh4' style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 300; font-size: 3em; color: #0049B3; padding-bottom: 0em;">
+                 
                         <p>BOOK YOUR APPOINTMENT</p>
                     </div>
+                    <form method="post">
+            <div class="">
+              <div class="">
+              <label>Name</label>
+              <input type="text" id="name" name="name" required="required"
+                class="form-control form-control-sm rounded-0"/>
+              </div>
 
-                    <div className='landform' style="font-family: 'IBM Plex Sans', sans-serif;
-                    font-weight: 300; font-size: 1.5em; color: #0049B3;">
+              <div class="">
+                <label>Phone Number</label>
+                <input type="text" id="phone_number" name="phone_number" required="required"
+                class="form-control form-control-sm rounded-0"/>
+              </div>
 
-                        <label for='landfname'>Name</label>
-                        <br>
-                        <input type='text' id='landfname' name='fname'></input>
 
-                        <br>
-
-                        <label for='landlname'>Contact Number</label>
-                        <br>
-                        <input type='text' id='landlname' name='lname'></input>
-
-                        <br>
-
-                        <label for='landlname'>Appointment Reason</label>
-                        <br>
-                        <input type='text' id='landlname' name='lname'></input>
-
-                        <br>
-
-                       
-
-                        <label for='landemail'>Time</label>
-                        <br>
-                        <input type='time' id='landemail' name='email'></input>
-
-                        <br><br>
-
-                        <label for='landnnum'>Appointment Date</label>
-                        <br>
-                        <input type='text' id='landnum' name='num'></input>
-
-                        <br>
-                        <input type="submit" value="Submit"></input>
+              <div class="">
+                <label>Reason of Appointment</label> 
+                <input type="text" id="reason" name="reason" required="required"
+                class="form-control form-control-sm rounded-0"/>
+              </div>
+              <div class="">
+                <label>Time</label>
+                <input type="time" id="time" name="time" required="required"
+                class="form-control form-control-sm rounded-0"/>
+              </div>
+              <div class="">
+                <div class="form-group">
+                  
+                  <label>Appointment Date</label>
+                    <div class="input-group date" 
+                    id="date_of_birth" 
+                    data-target-input="nearest">
+                        <input type="date" class="form-control form-control-sm rounded-0 datetimepicker-input" data-target="#date_of_birth" name="date_of_birth" 
+                        data-toggle="datetimepicker" autocomplete="off" />
+                        <div class="input-group-append" 
+                        data-target="#date_of_birth" 
+                        data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
                     </div>
                 </div>
+              </div>
+              
+              
+              </div>
+              
+              <div class="clearfix">&nbsp;</div>
+
+              <div class="row">
+                <div class="col-lg-11 col-md-10 col-sm-10 xs-hidden">&nbsp;</div>
+
+              <div class="">
+                <button type="submit" id="save_Patient" 
+                name="save_Patient" class="btn bgBlue btn-sm btn-flat">Book Appointment</button>
+              </div>
+            </div>
+          </form>
+                    
+                </div>
+               
                 <div className='landwindow4_2'>
                         <img className='rightlogo' src="girl.png"/>
                 </div>
@@ -191,8 +269,7 @@
         </div>
     </div>
 
-
-
+   
 
 
 
