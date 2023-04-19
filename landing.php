@@ -150,36 +150,33 @@
                     <div className='landform' style="font-family: 'IBM Plex Sans', sans-serif;
                     font-weight: 300; font-size: 1.5em; color: #0049B3;">
 
-                        <label for='landfname'>First Name</label>
+                        <label for='landfname'>Name</label>
                         <br>
                         <input type='text' id='landfname' name='fname'></input>
 
-                        <br><br>
+                        <br>
 
-                        <label for='landlname'>Last Name</label>
+                        <label for='landlname'>Contact Number</label>
                         <br>
                         <input type='text' id='landlname' name='lname'></input>
 
-                        <br><br>
-
-                        <label for='landlname'>Gender</label>
                         <br>
-                        <select id="cars" name="cars">
-                            <option value="volvo">Male</option>
-                            <option value="saab">Female</option>
-                            <option value="saab">Others</option>
-                        </select>
 
-                        
-                        <br><br>
-
-                        <label for='landemail'>Email</label>
+                        <label for='landlname'>Appointment Reason</label>
                         <br>
-                        <input type='text' id='landemail' name='email'></input>
+                        <input type='text' id='landlname' name='lname'></input>
+
+                        <br>
+
+                       
+
+                        <label for='landemail'>Time</label>
+                        <br>
+                        <input type='time' id='landemail' name='email'></input>
 
                         <br><br>
 
-                        <label for='landnnum'>Number</label>
+                        <label for='landnnum'>Appointment Date</label>
                         <br>
                         <input type='text' id='landnum' name='num'></input>
 
