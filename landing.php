@@ -246,7 +246,7 @@ try {
                     <div class="input-group date" 
                     id="date_of_birth" 
                     data-target-input="nearest">
-                        <input type="date" class="form-control form-control-sm rounded-0 datetimepicker-input" data-target="#date_of_birth" name="date_of_birth" 
+                        <input type="text" class="form-control form-control-sm rounded-0 datetimepicker-input" data-target="#date_of_birth" name="date_of_birth" 
                         data-toggle="datetimepicker" autocomplete="off" />
                         <div class="input-group-append" 
                         data-target="#date_of_birth" 
@@ -254,6 +254,8 @@ try {
                             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                         </div>
                     </div>
+
+
                 </div>
               </div>
               
@@ -281,16 +283,42 @@ try {
         </div>
     </div>
 
-   
 
 
 
+<?php include './config/site_js_links.php'; ?>
+<?php include './config/data_tables_js.php'; ?>
 
 
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 
+<script>
+  showMenuSelected("#mnu_patients", "#mi_patients");
 
+  var message = '<?php echo $message;?>';
+
+  if(message !== '') {
+    showCustomMessage(message);
+  }
+  $('#date_of_birth').datetimepicker({
+        format: 'L'
+    });
+      
+    
+   $(function () {
+    $("#all_patients").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#all_patients_wrapper .col-md-6:eq(0)');
+    
+  });
+</script>
 
 </body>
+
+
 
 
 </html>
